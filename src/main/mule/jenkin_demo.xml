@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="jenkin_demoFlow" doc:id="af7f7823-dd79-4c4c-822a-f6735986212a" >
 		<http:listener doc:name="Listener" doc:id="ead4a66e-1894-4c13-a77f-da46645b45b5" config-ref="HTTP_Listener_config" path="/jenkin"/>
+		<set-payload value="add new variable" doc:name="Set Payload" doc:id="61701ef1-67c4-4369-9593-568c93a14ec2" />
 		<logger level="INFO" doc:name="Logger" doc:id="484c30b8-36f6-41ac-a0af-f9d6ed55dad6" message="sample flow"/>
 		<set-payload value="jenkin project" doc:name="Set Payload" doc:id="e12c7b69-7a2b-40d9-9bf4-4d09174bbf8a" />
 		<logger level="INFO" doc:name="Logger" doc:id="d351d7f8-d852-4048-8f12-0d30baadd718" message="In logger Component"/>
